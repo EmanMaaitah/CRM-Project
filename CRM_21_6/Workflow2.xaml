@@ -1,0 +1,422 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Workflow2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="747,3660" sap2010:WorkflowViewState.IdRef="Workflow2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Workflow2" sap:VirtualizedContainerService.HintSize="674,3379.0000000000005" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ID_Num" />
+      <Variable x:TypeArguments="x:String" Name="Name" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_info" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="611,1047" sap2010:WorkflowViewState.IdRef="SequenceX_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="577,955" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="Copy of my_file(2).xlsx">
+        <ueab:ExcelApplicationCard.Body>
+          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="543,659" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="509,405" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="473,294" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,234" sap2010:WorkflowViewState.IdRef="InsertColumnX_2" NewColumnName="ID Num" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RelativeColumnName="personal email" RelativePosition="After" />
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="509,194" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveTo="[dt_info]" />
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelApplicationCard.Body>
+      </ueab:ExcelApplicationCard>
+    </ueab:SequenceX>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_info]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="611,2309" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,2120" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: CRM" sap:VirtualizedContainerService.HintSize="518,2060" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="06d7139d-afb1-442b-b2f6-c4c09a2e8f7b" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1819" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="450,115" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'First'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,251" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="06d7139d-afb1-442b-b2f6-c4c09a2e8f7b" Text="[CurrentRow(&quot;first name&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="InputBox" DesignTimeRectangle="97, 304, 221, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='input' class='bubble-element Input a1729373708340x1691' aaname='' /&gt;" Guid="c1e8cf1c-8c8b-4258-8a5b-fb435335b7ab" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOEAAAAmCAYAAAAyXvx2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEnSURBVHhe7d29TQNBFIVRmiGiCxJ6oAq6oAQaoABETDuQOEIyZGjQk3gr47/EHt/kHOlGazn7NNpk9moAUSKEsJ0Iv99ex+rhfnzc3Yz322szO8Oqp+qq+tr2L8LPp8e9f2Bm51t1tmmJsArtH61fnsfP1/rvCXCq6qm66sY2T8QlwjoqO0Bgjg6xemtLhP0O6ASEeaqv6qx6a0uE9aAGzLXdmgjhwkQIYSKEMBFCmAghTIQQJkIIEyGEiRDCRAhhIoQwEUKYCCFMhBAmQggTIYSJEMJECGEihDARQpgIIUyEECZCCDsYoct/Yb6jl/+6Bh/mO3oNvg/CwDzVUwdY2/tBmOLTaGbzd/DTaK0KraOy3xHN7PRVT9XV5gnYdiIELkuEEDXGLyzTjjuvLjjfAAAAAElFTkSuQmCC" InformativeScreenshot="00690fc847a41914c083f6dba65679eb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="First:" CvType="Text" DesignTimeRectangle="43, 304, 54, 22" ElementType="Text" FriendlyName="'First'" FullSelectorArgument="&lt;webctrl aaname='First:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First:' class='content' tag='DIV' type='' check:innerText='First:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAaCAYAAADmF08eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGvSURBVFhH7ZY9S8NQFIb9M538CZkihYCQodCpnZyCg0EwFCoOxUERWhxCEDoFQeySQdMpOnSQCqVLiRCcMogBkQ5SKBQCr/lqG22C0C/qTR64w01Ohifn3DfZQkJIRUkjEaJfV+fkiw4f7/G+kyFf9POwkAxRi9lOhqgrOSPabwqgKCp6SbpTMUD7ggFd0tD3H9l44kU9oThG0K958FLbUV4MXaIg9oLNCplTdHlsvKhbIzRDg9sTQZUUtG4EsFlnxE+CsX7TUNtnQbtjn2XBVVWYQ/eGDnk3dCSctUrh5YpSRdSewqf2FXK+CLETDLg9wGtDAH3ZdYbfJ66j/YcK9soKTDu4sCDxoqE37S/R6cGUSNEDFVaw9dFRzx5DC7uPLOgv1p+i1h0PulCHPi5ckOV29EidSeH+swgux0KoKtAMR/BXh/7nGY0Q9bBHsIw2VMk5vzket8a0TWSIumPaMX9+ggwZ+VAdGaK2H0aTgBqH0VlrIu+Kcg0z2E1ZXxjNIxr1p/TRhVwugvECjQF3qkAPt9jSUCkwXuCFO7uWMCKRVJQ0UlHSSEVJwxfN4BuE/IEQdxG+VgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DisplayName="Select Item 'State'" sap:VirtualizedContainerService.HintSize="450,190" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CurrentRow(&quot;state&quot;).ToString]" ScopeIdentifier="06d7139d-afb1-442b-b2f6-c4c09a2e8f7b" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                          <x:String>Choose a state...</x:String>
+                          <x:String></x:String>
+                          <x:String>Alabama</x:String>
+                          <x:String>Alaska</x:String>
+                          <x:String>Arizona</x:String>
+                          <x:String>Arkansas</x:String>
+                          <x:String>California</x:String>
+                          <x:String>Colorado</x:String>
+                          <x:String>Connecticut</x:String>
+                          <x:String>Delaware</x:String>
+                          <x:String>District of Columbia</x:String>
+                          <x:String>Florida</x:String>
+                          <x:String>Georgia</x:String>
+                          <x:String>Hawaii</x:String>
+                          <x:String>Idaho</x:String>
+                          <x:String>Illinois</x:String>
+                          <x:String>Indiana</x:String>
+                          <x:String>Iowa</x:String>
+                          <x:String>Kansas</x:String>
+                          <x:String>Kentucky</x:String>
+                          <x:String>Louisiana</x:String>
+                          <x:String>Maine</x:String>
+                          <x:String>Maryland</x:String>
+                          <x:String>Massachusetts</x:String>
+                          <x:String>Michigan</x:String>
+                          <x:String>Minnesota</x:String>
+                          <x:String>Mississippi</x:String>
+                          <x:String>Missouri</x:String>
+                          <x:String>Montana</x:String>
+                          <x:String>Nebraska</x:String>
+                          <x:String>Nevada</x:String>
+                          <x:String>New Hampshire</x:String>
+                          <x:String>New Jersey</x:String>
+                          <x:String>New Mexico</x:String>
+                          <x:String>New York</x:String>
+                          <x:String>North Carolina</x:String>
+                          <x:String>North Dakota</x:String>
+                          <x:String>Ohio</x:String>
+                          <x:String>Oklahoma</x:String>
+                          <x:String>Oregon</x:String>
+                          <x:String>Pennsylvania</x:String>
+                          <x:String>Rhode Island</x:String>
+                          <x:String>South Carolina</x:String>
+                          <x:String>South Dakota</x:String>
+                          <x:String>Tennessee</x:String>
+                          <x:String>Texas</x:String>
+                          <x:String>Utah</x:String>
+                          <x:String>Vermont</x:String>
+                          <x:String>Virginia</x:String>
+                          <x:String>Washington</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvElementArea="473, 387, 190, 36" CvTextArea="479, 399, 100, 13" CvTextArgument="Choose a state..." CvType="InputBox" DesignTimeRectangle="474, 388, 187, 34" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Choose a state...'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='bubble-element Dropdown dropdown-chevron' aaname='' /&gt;" Guid="3c1c9c9c-ca4d-4f48-bf44-4c1768641013" InformativeScreenshot="74cc1129c08e7b6a241cdc16b133cfb3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="State:" CvType="Text" DesignTimeRectangle="386, 388, 88, 22" ElementType="Text" FriendlyName="'State'" FullSelectorArgument="&lt;webctrl aaname='State:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='State:' class='content' tag='DIV' type='' check:innerText='State:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAaCAYAAAA67jspAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKYSURBVGhD7ZfPi9pAFMf7f+UUEATBw4Inc6kn2cNKoUGo9LAXkeLKQoMXe9DbHhZ7iQeJULZQ0kt6iiARiguCsIeAEBQCgW8nOok/Mu4WKQObzgdE3sw8gp+8eTO+gYArQjhnhHCODIdDIZwXoezBYCCE86LZbGK1WgnhvKjX65tvIZwTQjhn2MLXM+g3FSg5CZIkQb4ooda14AZ0XnA2DOEujGoW6r0DLxLsL2DeKpCrBpmlPOlQ3+u7+G85Ny8lJIV7D7iWNFjH1RzY0DIq9CcaC+FnwahwG51MGXe/aRjjYzG2sfDJHhjVNq0m/uwLnJvQPijIhuOZPMo3Ombr7dSzea6FXjUPmZGXJpg93J/0UM7loXZNzJZ08BhWpQYOeoUCWt/paOBj9lWFfGuR10Vh5flk9xRV9KfeNg482N3yYR5Z03tXgfaTrnmlsA/NkMCFPdCgXmSRr2owIhkRJ1qDv4wVbQnXFXpwaMjM+6VB+mzRgBK2tkyH7DeKb0HLyVCHx098XZwWvoc30dF4m0Xpi/18pRK8qY7WJW0N8UfbiWPkuQN1b+2JvJSQFD5/QGfo7MRGrEmFFcroz2nMEh6OkYO1P9nbDeHYS8KHRHg7bWrZJIWPO5CvdCxouGMB/UpGZ0xDhjjv23WyNTz2UXpB+OaZHw0kunMK7/1J4eHBVyS9ktzD3ajMw8Nv1IBSJD01GttUcwvmvqVpD4WCBjM6aJcO+lX5sDWw8jbPVNAYzeCHksmh6dyryH4ydy8h1Yem58Bo1+J/mlJOQYVc05yD3+pvbhL5DJmPK5a8mEGL3HDCPBn5yxb0H3eHLYWZRzi6Fqpt4/Ba6P9Hh6bg3yGEc0YI54wQzhkhnDNCOGeEcM5shQN/ACF5NcCWFBM2AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <If Condition="[CurrentRow(2).ToString.Contains(&quot;Male&quot;)]" sap:VirtualizedContainerService.HintSize="450,653" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,241" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gender'" sap:VirtualizedContainerService.HintSize="382,181" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06d7139d-afb1-442b-b2f6-c4c09a2e8f7b" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvElementArea="128, 354, 23, 22" CvTextArea="156, 358, 29, 14" CvTextArgument="Male" CvType="RadioButton" DesignTimeRectangle="129, 355, 56, 22" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'Male'" Guid="9bba8ec6-ac60-4fb5-aff6-edcdbdb71761" InformativeScreenshot="9bf16a76689ac30751afe45c90aba47d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CvTextArgument="Gender:" CvType="Text" DesignTimeRectangle="43, 356, 75, 22" ElementType="Text" FriendlyName="'Gender'" FullSelectorArgument="&lt;webctrl aaname='Gender:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Gender:' class='content' tag='DIV' type='' check:innerText='Gender:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAaCAYAAAD2dwHCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK8SURBVGhD7Ze9a9tAGIf7f90kMAQM3jxZUyaToaEQYagppFNDwSJQ4cWLTaCkYFwoyhDkxUNxIKiDcaAoENxJkEFQEBQEgl9fSSf7LNtJHMUmhnvAw329d3qs9+70BpJnI+XlQMrLgZSXAykvB1JeDqS8HEh5OViQ59+a0A9KUBgDY3tQ3xuw7gLeukk8mEcMxogXd4A5ecFNC2qxjt5vn9fQI123UC1qMF1esTF2Wl6AYYOh3p+JS5l091E+c3hpU+y0vNWLD9wx7DtBaujBbmsoFaLUVlA60GGKqT0ywI46MNM+hRK0tg0v5O0RoQurUZ21f7Vwnp3fs9Gp8S2E+lQbJib/eBsxbjJo3QHOeZ963+Mt2+FJ8uYJaNEqLdqBz2X4ow6qBR126i+Sx1QY11y478Riqt/T3I9ilKHUTLhRjNCH802jMcL8wRhGRUPvlsegPuN2FcqpTaMTInmsomN4zytSaGzn3SGMq8UsekkekEeLjw8N/muOk+rQpnoDtvgWwcfgWEHrhhfjN8+kiDOCKx3seEA9I6LY++j9iQsJwRC6KO8Xxfhi8wLHH+BjoUWjEyJ5hz+WbMYBrbGoQLvc7Jv4pDfPu6C3IpV3b0ITpQq/6dgl8ubq4hjGVEKCC/PtLEY855I5mDAuTtuL7aaqyPryPGvJg2d4CXmXwpwreEXyVp+2TrssLHKMVqEO6y8vpohp/Jg8imEwuv6Ie1U2benapHyweJoLCPO8Inm0/uieV6BNOr3nhQHcnzrV0aYsnHLOmQr1k4UJ37n92x604gmG6ZM+Ki85MNTTYXICLzswQgedioqT/gRB2qerYe/zcCp0pbztHxgJi18YHdjZ9WWvKrXMV0gkqmY9II+gq8pgzauK1qQ/LHtVWXYoBFs/MCTrIuXlQMrLgZSXAykvB1JeDqS8ZwP8B7250VxHAxnJAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,241" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gender'" sap:VirtualizedContainerService.HintSize="382,181" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06d7139d-afb1-442b-b2f6-c4c09a2e8f7b" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvElementArea="128, 380, 22, 22" CvTextArea="156, 384, 46, 14" CvTextArgument="Female" CvType="RadioButton" DesignTimeRectangle="129, 381, 73, 21" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'Female'" Guid="ad73859e-ae00-4251-a7da-d11c2b704a67" InformativeScreenshot="c30318a469d9f05d95b666c56857b810.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CvTextArgument="Gender:" CvType="Text" DesignTimeRectangle="43, 356, 75, 22" ElementType="Text" FriendlyName="'Gender'" FullSelectorArgument="&lt;webctrl aaname='Gender:' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Gender:' class='content' tag='DIV' type='' check:innerText='Gender:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAaCAYAAAD2dwHCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK8SURBVGhD7Ze9a9tAGIf7f90kMAQM3jxZUyaToaEQYagppFNDwSJQ4cWLTaCkYFwoyhDkxUNxIKiDcaAoENxJkEFQEBQEgl9fSSf7LNtJHMUmhnvAw329d3qs9+70BpJnI+XlQMrLgZSXAykvB1JeDqS8HEh5OViQ59+a0A9KUBgDY3tQ3xuw7gLeukk8mEcMxogXd4A5ecFNC2qxjt5vn9fQI123UC1qMF1esTF2Wl6AYYOh3p+JS5l091E+c3hpU+y0vNWLD9wx7DtBaujBbmsoFaLUVlA60GGKqT0ywI46MNM+hRK0tg0v5O0RoQurUZ21f7Vwnp3fs9Gp8S2E+lQbJib/eBsxbjJo3QHOeZ963+Mt2+FJ8uYJaNEqLdqBz2X4ow6qBR126i+Sx1QY11y478Riqt/T3I9ilKHUTLhRjNCH802jMcL8wRhGRUPvlsegPuN2FcqpTaMTInmsomN4zytSaGzn3SGMq8UsekkekEeLjw8N/muOk+rQpnoDtvgWwcfgWEHrhhfjN8+kiDOCKx3seEA9I6LY++j9iQsJwRC6KO8Xxfhi8wLHH+BjoUWjEyJ5hz+WbMYBrbGoQLvc7Jv4pDfPu6C3IpV3b0ITpQq/6dgl8ubq4hjGVEKCC/PtLEY855I5mDAuTtuL7aaqyPryPGvJg2d4CXmXwpwreEXyVp+2TrssLHKMVqEO6y8vpohp/Jg8imEwuv6Ie1U2benapHyweJoLCPO8Inm0/uieV6BNOr3nhQHcnzrV0aYsnHLOmQr1k4UJ37n92x604gmG6ZM+Ki85MNTTYXICLzswQgedioqT/gRB2qerYe/zcCp0pbztHxgJi18YHdjZ9WWvKrXMV0gkqmY9II+gq8pgzauK1qQ/LHtVWXYoBFs/MCTrIuXlQMrLgZSXAykvB1JeDqS8ZwP8B7250VxHAxnJAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" sap:VirtualizedContainerService.HintSize="450,190" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06d7139d-afb1-442b-b2f6-c4c09a2e8f7b" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvElementArea="61, 430, 98, 33" CvTextArea="93, 439, 32, 15" CvTextArgument="Add" CvType="Button" DesignTimeRectangle="64, 433, 92, 28" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Add'" FullSelectorArgument="&lt;webctrl aaname='Add' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Add' tag='BUTTON' type='' class='bubble-element Button clickable-element show-outline' check:innerText='Add' /&gt;" Guid="1bcaf95c-2081-499a-9f9a-5c587a66504d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMmSURBVGhD7VpNaxpRFJ0/U+jfSOhH/kMy67bQVand6qZRChIXUiJBBBdWrHWRQqJBwU2EbpLW6iqmITVFqTEhhvgxak7n3jFGJy+lkIlOk/fg8ObNuzOLc+fce4d3FU3T0Ol00Gq10Gg0UKvVUC6Xsbe3h93dXQkLQFwSp8QtcUxcE+fEvUIXzWYTx8fHbLi2toZ4PA6/3w+Xy8VrOd9s9ng8SKVSzCtxTFwT58S9Qt6gG/l8HsFgEBmPE18X5vDz0UP8mn0gYQGIy/z8E3x2u7C6uopcLsecE/cKSYK8kslkkH79TPgCCeuQePMS6XSaOSfuFYpLJJMPb53CBySsx6dFJxKJBOcEhZIDxabC/GOhsYT1+K5znUwmOTErJIXl5WUZ8ycI4nppaYnDkEJl0srKitBQ4vYQjUa5RJUOmBK8Xq90wDRhUwW40T6FMZpbaAhtzLh45gTt96L9C8TQ5ReXcCbcnyzsqQB3Fn0miUYbnbDA5gr+TwfYUgGH2TJThJ4x9bfdQrtxSAVYBBWtChGkf/lftnBOl/UsjgS21UAWvSYZkE0JvWscUE8U0R848/xHaaAuqQAx1JEvVA1CY+LKaDnMdvpehw11pbRxPiD4igPejYSzTntwQUMqQIyPRYOfSgqHszM42zeW3fUZsR0laVVfD4ked8BR7jffpffV9XVVV4MxpAKEaBSNr7Sfe8XrYT7YCY7ZDYndjw3uiXPA6Q5bjeQRmQP+gsvys18poavH6+7BiXHDVI7eFQfYSwFj5ad5mGL7HQlBtlLAdeHGHJYYdyQJ20gBKpoHBjW9rDq2V10vGRumcrTqS6H7L2VodMu2Zag9/4TvEWz5J3yfIBUwZUgFTBlDBdCxGLWjlOWR5MRAXMdiMeNIUh7KTx7UIxQKhYxDeWqNoJ6giGxLmRjii05uzuK2lNHGrKTjhfABCeuQcTwftihyY9ZFa2KhUEAgEODWxG8LT2VOsBDE5bY6h7TOrc/nQ7FYvGxNNDfnbmxsIBKJcGUUDoe5SVfON5up5KSPe3NzkzkmrofNubI9/fZBXBKnxC1xTFwT55qm4Q9VKIRaiJLW2AAAAABJRU5ErkJggg==" InformativeScreenshot="2656e2c42847a7ab34b8a3734a01c9f8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Customer ID'" sap:VirtualizedContainerService.HintSize="450,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="06d7139d-afb1-442b-b2f6-c4c09a2e8f7b" TextString="[ID_Num]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CvType="AnyWordGroup" DesignTimeRectangle="1277, 642, 89, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'6038500'" FullSelectorArgument="&lt;webctrl aaname='6038500' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='content' tag='DIV' type='' /&gt;" Guid="bd69f25f-72d6-4b64-adbe-cbed835a6fbd" InformativeScreenshot="28c3f63a83dd97fd641a98fb3b81a205.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="Customer ID" CvType="Text" DesignTimeRectangle="1277, 614, 89, 20" ElementType="Text" FriendlyName="'Customer ID'" FullSelectorArgument="&lt;webctrl aaname='Customer ID' class='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customer ID' class='content' tag='DIV' type='' check:innerText='Customer ID' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAAYCAYAAACY5PEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVGhD7ZfLK+1RFMfv/2QgycBERAh5RCJKDERCSokkI0kYGEgkE1GSMkCIkiJEIXnkzcCR92TdvqvWr3N+1uYc9tW9tz341O/s12/vz1577d/59fb2Ro7vEwgEwsZJt4Qm14STbglNrgkn3RKaXBNOuiU0uSacdEtock046ZbQ5Jp4J/3y8pJ6enooJSWFoqKiKD4+nurq6mhra4teX19D2v5vrKys8Jo7Ozv59/X1NRUWFnKZEBMTQxUVFbS4uEgvLy9eX02uiRDpu7u7lJ6eTmlpaTQ5OUmHh4c0NzfHL+nq6qLn52evbaQ8Pj5SS0sLjY2NqfV/Aybp+fn5dHBwwL/X19eptbWVoqOjqbe313OiyTXhSb+9vWW5kA75Ug6wo8G7+hUwfnFx8T8pHeBZ2sFFX18fi0dQokyTa8KTPj8/z4NgMCnTwISCJ7G3t0fJycksE+lnYWGBIwOTz87O5t+IkoKCAu+IApF/cnJC9fX1fGwBnlEmY2dkZNDg4CCVlZVx/ejoKMvB2Jgv2iMlyvw2Nzc5eFCHAJqammJJIrC/v5+ampq4fnp62usHwpUOkAUwfmNjIz08PKhyTXjSIQEvXFpaChncz0fSj4+PKScnh4/fzs4OLwqR8PT0RGtra5SUlETDw8Pc9/7+ns7Pz6m0tJRPwOrqKoNnCIZIGbuyspKP9cDAAMXGxlJWVhYHCVIg7hykPmy4pMfa2lra2Nig8fFxSkxM5DWJQLRHOd6NlBe8tkik++s0uSasS8/MzKTm5mY6PT0NuXiD20kZNsX/TmwSylDn74ONwIkRKVgAIr2hoYE3EacU0hGFqJd7pL29nS4uLnjeHR0dxg+CH5cuix0aGgoZ3M9H0rX0guj1t5Ox8Iwy1EmZLBx1/j6yUJEC0RAu0lGOvn5QjyAI7qvx4+kFkYCjnpeXxxMMfgHSg9zSH0kP7oPjW1NTw+kCl6jWLtJI/0w6Ih0nDakNbYW7u7t3fTXClQ4X+HL59kUKsPiEhATKzc3lCwi7OTs7SyUlJZynsaMjIyMUFxfHuRl5E8cXE4UYiG5ra+N8i7ry8nIWj0XjMk1NTaWqqipaXl7ml4eb08OVvr+/z9GHOeEOAN3d3byGq6urL0v/Y5+MwtHREU8aFw4mgE3ARXV2dsb1EIi8iC8JpI+JiQkqKipiMTc3N/zHCn0wKQiXLxFMDl8h6IcLdWZmhss/+3qJRDrKtre3qbq6mt+PNWAtGM/fV8MkHWUC5mj1z5Hj62hyTTjpltDkmnDSLaHJNeGkW0KTa8JJt4Qm14STbglNrgkn3RKaXJ0A/QbaX/l+Lt4gmwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,118" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[ID_Num]" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,50" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="693,1194" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="631,1109" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" WorkbookPath="Copy of my_file(2).xlsx">
+                            <ueab:ExcelApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="597,817" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="535,732" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="True">
+                                    <ueab:ExcelForEachRowX.Body>
+                                      <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                        <ActivityAction.Argument1>
+                                          <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                        </ActivityAction.Argument1>
+                                        <ActivityAction.Argument2>
+                                          <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                        </ActivityAction.Argument2>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="501,519" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:InsertColumnX ColumnFormat="{x:Null}" NewColumnName="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,248" sap2010:WorkflowViewState.IdRef="InsertColumnX_3" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RelativeColumnName="personal email" RelativePosition="Before" />
+                                          <ueab:WriteCellX AutoIncrementRow="True" Cell="[CurrentRow(&quot;Peope&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439,184" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[ID_Num]">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ueab:WriteCellX>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ueab:ExcelForEachRowX.Body>
+                                  </ueab:ExcelForEachRowX>
+                                </Sequence>
+                              </ActivityAction>
+                            </ueab:ExcelApplicationCard.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ueab:ExcelApplicationCard>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="c1822a6839f620e39d8bdf4c4d93c2ff.jpg" Selector="&lt;html app='chrome.exe' title='CRM' /&gt;" Title="CRM" Url="https://www.theautomationchallenge.com/crm" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
