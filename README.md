@@ -63,11 +63,49 @@ In this Robot, data is extracted from Excel and filled in with the crm site auto
  9) Write Cell activity, With attention, you must put it within the scope of the for to avoid repetition of the information.
      
      ![image](https://github.com/user-attachments/assets/e6fa2580-4e95-49b5-a0d2-fcb980354e19)
+    
+    
+# Second Bot 
+## PROCEDURES
+
+1) The difference from the first robot is using Read Range activty which store data in Data table format.
+2) Single Excel Process Scope > Use Excel File > Read Range (dt_info)
+3) For Each Row in Data Table (dt_info) > Use Browser Firefox: CRM > Navigate Browser - Refresh > Type Into > Select Item
+
+   
+<img src="https://github.com/user-attachments/assets/1da7db1c-f87b-4404-8f20-3eb6748292b9" width="400">
+ 
+
+
+.
+<img src="https://github.com/user-attachments/assets/2472c6b5-1121-4499-9abc-1c1bf0614226" width="400">
+
+
+.
+<img src="https://github.com/user-attachments/assets/b1fe1718-6e41-4306-90d5-5a0845936d8c" width="400">
+
+
+.
+<img src="https://github.com/user-attachments/assets/8e382bef-7792-4c90-b1d9-f12bcec986d3" width="400">
+
+
+4) If Activity: CurrentRow(2).ToString.Contains("Male")
+
+   
+<img src="https://github.com/user-attachments/assets/6fb16599-bbea-471b-a75c-ad19845a3f84" width="400">
+
+
+6) Get Text 'Customer ID' > Message Box
+
+   
+<img src="https://github.com/user-attachments/assets/2b6c402b-342b-4458-bdb4-c6781c0ea81a" width="400">
+   
+
 
 
     
 ## Results
-To watch the robot run and the results, [click here](https://drive.google.com/file/d/13OePogfspo3yjXKYVSjQ00JYrhz_Cnfu/view?usp=drive_link)
+To watch the First Bot run this video, [click here](https://drive.google.com/file/d/13OePogfspo3yjXKYVSjQ00JYrhz_Cnfu/view?usp=drive_link)
  
 
 
